@@ -1,0 +1,44 @@
+
+      <html xmlns:o='urn:schemas-microsoft-com:office:office'
+            xmlns:w='urn:schemas-microsoft-com:office:word'
+            xmlns='http://www.w3.org/TR/REC-html40'>
+      <head>
+          <meta charset="utf-8">
+          <title>Exported Document</title>
+          <style>
+              body { font-family: Arial, sans-serif; }
+          </style>
+      </head>
+      <body>
+          <h1 id="mrcoffeewebsitedocumentation">MR.COFFEE Website Documentation</h1>
+<h2 id="projectoverview">Project Overview</h2>
+<p>The MR.COFFEE website is designed to provide an engaging and interactive experience for coffee enthusiasts. It features a modern, responsive design with five main pages: Home, Rewards, About Us, Menu, and Order. The site includes interactive elements such as a modal for app downloads and animations for reward cards.</p>
+<h2 id="pagedescriptions">Page Descriptions</h2>
+<ul>
+<li><strong>Home</strong>: The landing page introduces MR.COFFEE and highlights key offerings.</li>
+<li><strong>Rewards</strong>: Displays the rewards program with interactive reward cards that open a modal prompting app downloads.</li>
+<li><strong>About Us</strong>: Shares the story and mission of MR.COFFEE.</li>
+<li><strong>Menu</strong>: Showcases the variety of coffee and pastry options available.</li>
+<li><strong>Order</strong>: Allows users to place orders directly from the website.</li>
+</ul>
+<h2 id="usageinstructions">Usage Instructions</h2>
+<ul>
+<li>Navigate through the site using the top navigation bar.</li>
+<li>Click on reward cards in the Rewards page to view the app download modal.</li>
+<li>Use the hamburger menu on mobile devices for easy navigation.</li>
+</ul>
+<h2 id="assetsandreferences">Assets and References</h2>
+<ul>
+<li>Images are sourced from Unsplash and are used to enhance the visual appeal of the site.</li>
+<li>Key images include <code>PourOver.jpg</code>, <code>ButterCroissant.jpg</code>, <code>OurCoffeeShop.jpeg</code>, etc.</li>
+</ul>
+<h2 id="additionalnotes">Additional Notes</h2>
+<ul>
+<li>Ensure all assets are in the correct directories for the site to function properly.</li>
+<li>The site is optimized for both desktop and mobile views.</li>
+</ul>
+<hr />
+<p>This documentation provides a comprehensive overview of the MR.COFFEE website, detailing its structure, functionality, and assets used. </p>
+      </body>
+      </html>
+    

@@ -46,11 +46,9 @@
                 <p>Get exclusive rewards and track your points with our mobile app</p>
                 <div class="app-buttons">
                     <a href="#" class="app-btn">
-                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&auto=format&fit=crop&q=60" alt="App Store">
                         <span>Download on App Store</span>
                     </a>
                     <a href="#" class="app-btn">
-                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&auto=format&fit=crop&q=60" alt="Play Store">
                         <span>Get it on Google Play</span>
                     </a>
                 </div>
@@ -146,14 +144,12 @@
                 <button class="close-modal">&times;</button>
             </div>
             <div class="modal-body">
-                <p>To get this reward, please download our mobile app and sign in to your account.</p>
+                <p>To access this reward, please download our mobile app.</p>
                 <div class="app-buttons">
                     <a href="#" class="app-btn">
-                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&auto=format&fit=crop&q=60" alt="App Store">
                         <span>Download on App Store</span>
                     </a>
                     <a href="#" class="app-btn">
-                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&auto=format&fit=crop&q=60" alt="Play Store">
                         <span>Get it on Google Play</span>
                     </a>
                 </div>
@@ -188,6 +184,7 @@
             <p>&copy; 2024 MR.COFFEE. All rights reserved.</p>
         </div>
     </footer>
+    
 
     <script src="../js/main.js"></script>
     <script>
@@ -195,7 +192,7 @@
         const modal = document.getElementById('rewardModal');
         const closeModal = document.querySelector('.close-modal');
 
-        function showRewardModal(rewardName) {
+        function showRewardModal() {
             modal.classList.add('active');
             document.body.style.overflow = 'hidden';
         }
@@ -232,6 +229,9 @@
             card.style.transform = 'translateY(20px)';
             card.style.transition = 'all 0.5s ease';
             observer.observe(card);
+
+            // Show modal on card click
+            card.addEventListener('click', showRewardModal);
         });
 
         // Mobile Navigation

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -32,37 +33,94 @@
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Experience the Art of Coffee</h1>
-            <p>Where every cup tells a story</p>
-            <a href="pages/menu.html" class="cta-button">Explore Menu</a>
+            <div class="hero-text">
+                <h1 class="fade-in">Experience the Perfect Brew</h1>
+                <p class="fade-in">Crafted with passion, served with love</p>
+                <div class="hero-features fade-in">
+                    <div class="feature">
+                        <i class="fas fa-coffee"></i>
+                        <span>Premium Beans</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-clock"></i>
+                        <span>Fresh Daily</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-heart"></i>
+                        <span>Made with Love</span>
+                    </div>
+                </div>
+                <div class="hero-buttons fade-in">
+                    <a href="pages/menu.html" class="cta-button primary">Explore Menu</a>
+                    <a href="pages/rewards.html" class="cta-button secondary">Join Rewards</a>
+                </div>
+            </div>
+            <div class="hero-image fade-in">
+                <img src="/assets/background.jpeg" alt="Coffee Art">
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll to discover</span>
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
     <!-- Featured Products -->
     <section class="featured-products">
-        <h2>Most Loved Brews</h2>
+        <div class="section-header">
+            <h2>Most Loved Brews</h2>
+            <p>Discover our signature coffee selections</p>
+        </div>
         <div class="product-grid">
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&auto=format&fit=crop&q=60" alt="Classic Espresso">
-                <h3>Classic Espresso</h3>
-                <p>Rich and bold espresso shot, perfect for coffee purists</p>
-                <span class="price">Rp 39.900</span>
-                <a href="pages/menu.html" class="btn">Order Now</a>
+                <div class="product-image">
+                    <img src="/assets/ClassicEspresso.jpg" alt="Classic Espresso">
+                    <div class="product-overlay">
+                        <a href="pages/menu.html" class="btn-overlay">View Details</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Classic Espresso</h3>
+                    <p>Rich and bold espresso shot, perfect for coffee purists</p>
+                    <div class="product-footer">
+                        <span class="price">Rp 39.900</span>
+                        <a href="pages/order.html" class="btn">Order Now</a>
+                    </div>
+                </div>
             </div>
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=800&auto=format&fit=crop&q=60" alt="Cafe Latte">
-                <h3>Cafe Latte</h3>
-                <p>Smooth espresso with steamed milk and light foam</p>
-                <span class="price">Rp 49.900</span>
-                <a href="pages/menu.html" class="btn">Order Now</a>
+                <div class="product-image">
+                    <img src="/assets/CafeLatte.jpg" alt="Cafe Latte">
+                    <div class="product-overlay">
+                        <a href="pages/menu.html" class="btn-overlay">View Details</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Cafe Latte</h3>
+                    <p>Smooth espresso with steamed milk and light foam</p>
+                    <div class="product-footer">
+                        <span class="price">Rp 49.900</span>
+                        <a href="pages/order.html" class="btn">Order Now</a>
+                    </div>
+                </div>
             </div>
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=800&auto=format&fit=crop&q=60" alt="Caramel Frappe">
-                <h3>Caramel Frappe</h3>
-                <p>Blended coffee with caramel syrup and whipped cream</p>
-                <span class="price">Rp 59.900</span>
-                <a href="pages/menu.html" class="btn">Order Now</a>
+                <div class="product-image">
+                    <img src="/assets/CaramelFrappe.jpg" alt="Caramel Frappe">
+                    <div class="product-overlay">
+                        <a href="pages/menu.html" class="btn-overlay">View Details</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Caramel Frappe</h3>
+                    <p>Blended coffee with caramel syrup and whipped cream</p>
+                    <div class="product-footer">
+                        <span class="price">Rp 59.900</span>
+                        <a href="pages/order.html" class="btn">Order Now</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -70,20 +128,45 @@
     <!-- Rewards Preview -->
     <section class="rewards-preview">
         <div class="rewards-content">
-            <h2>Join Our Rewards Program</h2>
-            <p>Get exclusive offers and earn points with every purchase</p>
-            <a href="pages/rewards.html" class="cta-button">Learn More</a>
+            <div class="rewards-text">
+                <h2>Join Our Rewards Program</h2>
+                <p>Get exclusive offers and earn points with every purchase</p>
+                <div class="rewards-features">
+                    <div class="reward-feature">
+                        <i class="fas fa-gift"></i>
+                        <span>Free Birthday Treat</span>
+                    </div>
+                    <div class="reward-feature">
+                        <i class="fas fa-percent"></i>
+                        <span>Member Discounts</span>
+                    </div>
+                    <div class="reward-feature">
+                        <i class="fas fa-star"></i>
+                        <span>Exclusive Events</span>
+                    </div>
+                </div>
+                <a href="pages/rewards.html" class="cta-button">Learn More</a>
+            </div>
+            <div class="rewards-image">
+                <img src="/assets/RewardsApp.jpg" alt="Rewards App">
+            </div>
         </div>
     </section>
 
     <!-- Founder Spotlight -->
     <section class="founder-spotlight">
         <div class="founder-content">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop&q=60" alt="Susanto Liman">
+            <div class="founder-image">
+                <img src="/assets/ceo.jpg" alt="Susanto Liman">
+            </div>
             <div class="founder-info">
                 <h2>Meet Our Founder</h2>
                 <h3>Susanto Liman</h3>
                 <p>Bringing the art of coffee to life</p>
+                <div class="founder-quote">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"Coffee is not just a drink, it's an experience that brings people together."</p>
+                </div>
                 <a href="pages/about.html" class="cta-button">Read More</a>
             </div>
         </div>
@@ -95,6 +178,11 @@
             <div class="footer-section">
                 <h3>MR.COFFEE</h3>
                 <p>Making coffee an experience</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
             <div class="footer-section">
                 <h4>Quick Links</h4>
@@ -105,8 +193,9 @@
             </div>
             <div class="footer-section">
                 <h4>Contact Us</h4>
-                <p>Email: info@mrcoffee.com</p>
-                <p>Phone: (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@mrcoffee.com</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                <p><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</p>
             </div>
         </div>
         <div class="footer-bottom">
@@ -115,5 +204,52 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        // Mobile Navigation
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Scroll Animation
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.product-card, .rewards-content, .founder-content').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(74, 44, 42, 0.95)';
+            } else {
+                navbar.style.background = 'rgba(74, 44, 42, 0.95)';
+            }
+        });
+    </script>
 </body>
 </html> 
