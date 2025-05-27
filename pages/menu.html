@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - MR.COFFEE</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>MR.COFFEE</h1>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="rewards.html">Rewards</a>
+            <a href="about.html">About Us</a>
+            <a href="order.html" class="order-btn">Order Now</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Menu Section -->
+    <section class="menu-section">
+        <div class="menu-header">
+            <h1>Our Menu</h1>
+            <p>Discover our carefully crafted selection of coffee and pastries</p>
+        </div>
+        
+        <!-- Menu Filter -->
+        <div class="menu-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="espresso">Espresso</button>
+            <button class="filter-btn" data-filter="frappe">Frappe</button>
+            <button class="filter-btn" data-filter="brewed">Brewed</button>
+            <button class="filter-btn" data-filter="bread">Bread</button>
+        </div>
+
+        <!-- Menu Grid -->
+        <div class="menu-grid">
+            <!-- Espresso Items -->
+            <div class="menu-item" data-category="espresso">
+                <div class="menu-item-image">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&auto=format&fit=crop&q=60" alt="Classic Espresso">
+                </div>
+                <div class="menu-item-content">
+                    <h3>Classic Espresso</h3>
+                    <p>Rich and bold espresso shot, perfect for coffee purists</p>
+                    <div class="menu-item-footer">
+                        <span class="price">Rp 39.900</span>
+                        <button class="add-to-cart" data-item="Classic Espresso" data-price="39900">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="espresso">
+                <div class="menu-item-image">
+                    <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=800&auto=format&fit=crop&q=60" alt="Cafe Latte">
+                </div>
+                <div class="menu-item-content">
+                    <h3>Cafe Latte</h3>
+                    <p>Smooth espresso with steamed milk and light foam</p>
+                    <div class="menu-item-footer">
+                        <span class="price">Rp 49.900</span>
+                        <button class="add-to-cart" data-item="Cafe Latte" data-price="49900">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frappe Items -->
+            <div class="menu-item" data-category="frappe">
+                <div class="menu-item-image">
+                    <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=800&auto=format&fit=crop&q=60" alt="Caramel Frappe">
+                </div>
+                <div class="menu-item-content">
+                    <h3>Caramel Frappe</h3>
+                    <p>Blended coffee with caramel syrup and whipped cream</p>
+                    <div class="menu-item-footer">
+                        <span class="price">Rp 59.900</span>
+                        <button class="add-to-cart" data-item="Caramel Frappe" data-price="59900">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brewed Items -->
+            <div class="menu-item" data-category="brewed">
+                <div class="menu-item-image">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&fit=crop&q=60" alt="Pour Over">
+                </div>
+                <div class="menu-item-content">
+                    <h3>Pour Over</h3>
+                    <p>Handcrafted coffee using our specialty beans</p>
+                    <div class="menu-item-footer">
+                        <span class="price">Rp 44.900</span>
+                        <button class="add-to-cart" data-item="Pour Over" data-price="44900">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bread Items -->
+            <div class="menu-item" data-category="bread">
+                <div class="menu-item-image">
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&auto=format&fit=crop&q=60" alt="Butter Croissant">
+                </div>
+                <div class="menu-item-content">
+                    <h3>Butter Croissant</h3>
+                    <p>Flaky and buttery croissant, perfect with coffee</p>
+                    <div class="menu-item-footer">
+                        <span class="price">Rp 34.900</span>
+                        <button class="add-to-cart" data-item="Butter Croissant" data-price="34900">
+                            <i class="fas fa-plus"></i> Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <button class="close-cart">&times;</button>
+            </div>
+            <div class="cart-items">
+                <!-- Cart items will be added here dynamically -->
+            </div>
+            <div class="cart-total">
+                <span class="total-label">Total:</span>
+                <span class="total-price">$0.00</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MR.COFFEE</h3>
+                <p>Making coffee an experience</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="../index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="rewards.html">Rewards</a>
+                <a href="about.html">About Us</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@mrcoffee.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MR.COFFEE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Menu Filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const menuItems = document.querySelectorAll('.menu-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                const filter = button.getAttribute('data-filter');
+                
+                menuItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                        }, 100);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Quantity Control
+        document.querySelectorAll('.quantity-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const quantityElement = this.parentElement.querySelector('.quantity');
+                const minusBtn = this.parentElement.querySelector('.minus');
+                let quantity = parseInt(quantityElement.textContent);
+                
+                if (this.classList.contains('plus')) {
+                    quantity++;
+                    minusBtn.disabled = false;
+                } else if (this.classList.contains('minus') && quantity > 1) {
+                    quantity--;
+                    if (quantity === 1) {
+                        this.disabled = true;
+                    }
+                }
+                
+                quantityElement.textContent = quantity;
+            });
+        });
+
+        // Cart Functionality
+        const cart = [];
+        const cartModal = document.getElementById('cartModal');
+        const cartItems = document.querySelector('.cart-items');
+        const totalPrice = document.querySelector('.total-price');
+        const closeCart = document.querySelector('.close-cart');
+
+        // Add to Cart
+        document.querySelectorAll('.add-to-cart').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const menuItem = this.closest('.menu-item');
+                const itemName = menuItem.querySelector('h3').textContent;
+                const itemPrice = parseFloat(menuItem.querySelector('.price').textContent.replace('$', ''));
+                const quantity = parseInt(menuItem.querySelector('.quantity').textContent);
+                
+                // Add to cart array
+                const existingItem = cart.find(item => item.name === itemName);
+                if (existingItem) {
+                    existingItem.quantity += quantity;
+                } else {
+                    cart.push({
+                        name: itemName,
+                        price: itemPrice,
+                        quantity: quantity
+                    });
+                }
+                
+                // Update cart UI
+                updateCartUI();
+                
+                // Show cart modal
+                cartModal.classList.add('active');
+                
+                // Reset quantity
+                menuItem.querySelector('.quantity').textContent = '1';
+                menuItem.querySelector('.minus').disabled = true;
+                
+                // Add animation
+                this.classList.add('added');
+                setTimeout(() => {
+                    this.classList.remove('added');
+                }, 1000);
+            });
+        });
+
+        // Update Cart UI
+        function updateCartUI() {
+            cartItems.innerHTML = '';
+            let total = 0;
+            
+            cart.forEach((item, index) => {
+                const itemTotal = item.price * item.quantity;
+                total += itemTotal;
+                
+                const cartItem = document.createElement('div');
+                cartItem.classList.add('cart-item');
+                cartItem.innerHTML = `
+                    <div class="cart-item-info">
+                        <div class="cart-item-name">${item.name}</div>
+                        <div class="cart-item-quantity">Quantity: ${item.quantity}</div>
+                    </div>
+                    <div class="cart-item-price">$${itemTotal.toFixed(2)}</div>
+                    <button class="remove-item" data-index="${index}">&times;</button>
+                `;
+                
+                cartItems.appendChild(cartItem);
+            });
+            
+            totalPrice.textContent = `$${total.toFixed(2)}`;
+            
+            // Show empty cart message if cart is empty
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<div class="empty-cart">Your cart is empty</div>';
+            }
+        }
+
+        // Remove Item from Cart
+        cartItems.addEventListener('click', (e) => {
+            if (e.target.classList.contains('remove-item')) {
+                const index = e.target.getAttribute('data-index');
+                cart.splice(index, 1);
+                updateCartUI();
+            }
+        });
+
+        // Close Cart Modal
+        closeCart.addEventListener('click', () => {
+            cartModal.classList.remove('active');
+        });
+
+        // Close cart when clicking outside
+        cartModal.addEventListener('click', (e) => {
+            if (e.target === cartModal) {
+                cartModal.classList.remove('active');
+            }
+        });
+
+        // Checkout Button
+        document.querySelector('.checkout-btn').addEventListener('click', () => {
+            if (cart.length > 0) {
+                window.location.href = 'order.html';
+            }
+        });
+    </script>
+</body>
+</html> 

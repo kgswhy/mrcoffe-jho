@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - MR.COFFEE</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>MR.COFFEE</h1>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="rewards.html">Rewards</a>
+            <a href="about.html">About Us</a>
+            <a href="order.html" class="active order-btn">Order Now</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Order Section -->
+    <section class="order-section">
+        <div class="order-header">
+            <h1>Place Your Order</h1>
+            <p>Complete your order details and we'll prepare your coffee with care</p>
+        </div>
+
+        <div class="order-container">
+            <!-- Order Form -->
+            <div class="order-form">
+                <form id="orderForm" onsubmit="return handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Delivery Address</label>
+                        <textarea id="address" class="form-control" rows="3" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Payment Method</label>
+                        <div class="payment-methods">
+                            <div class="payment-method active" onclick="selectPayment(this, 'card')">
+                                <i class="fas fa-credit-card"></i>
+                                <span>Credit Card</span>
+                            </div>
+                            <div class="payment-method" onclick="selectPayment(this, 'cash')">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span>Cash</span>
+                            </div>
+                            <div class="payment-method" onclick="selectPayment(this, 'ewallet')">
+                                <i class="fas fa-wallet"></i>
+                                <span>E-Wallet</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">Special Instructions (Optional)</label>
+                        <textarea id="notes" class="form-control" rows="2"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        Place Order
+                    </button>
+                </form>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="order-summary">
+                <div class="summary-header">
+                    <h2>Order Summary</h2>
+                    <span class="item-count">3 items</span>
+                </div>
+
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <div class="item-info">
+                            <div class="item-image">
+                                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&auto=format&fit=crop&q=60" alt="Classic Espresso">
+                            </div>
+                            <div class="item-details">
+                                <h3>Classic Espresso</h3>
+                                <p>Quantity: 2</p>
+                            </div>
+                        </div>
+                        <div class="item-price">Rp 79.800</div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="item-info">
+                            <div class="item-image">
+                                <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=800&auto=format&fit=crop&q=60" alt="Cafe Latte">
+                            </div>
+                            <div class="item-details">
+                                <h3>Cafe Latte</h3>
+                                <p>Quantity: 1</p>
+                            </div>
+                        </div>
+                        <div class="item-price">Rp 49.900</div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="item-info">
+                            <div class="item-image">
+                                <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&auto=format&fit=crop&q=60" alt="Butter Croissant">
+                            </div>
+                            <div class="item-details">
+                                <h3>Butter Croissant</h3>
+                                <p>Quantity: 2</p>
+                            </div>
+                        </div>
+                        <div class="item-price">Rp 69.800</div>
+                    </div>
+                </div>
+
+                <div class="summary-total">
+                    <div class="total-row">
+                        <span>Subtotal</span>
+                        <span>Rp 199.500</span>
+                    </div>
+                    <div class="total-row">
+                        <span>Delivery Fee</span>
+                        <span>Rp 20.000</span>
+                    </div>
+                    <div class="total-row">
+                        <span>Tax</span>
+                        <span>Rp 19.950</span>
+                    </div>
+                    <div class="total-row final">
+                        <span>Total</span>
+                        <span>Rp 239.450</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MR.COFFEE</h3>
+                <p>Making coffee an experience</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="../index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="rewards.html">Rewards</a>
+                <a href="about.html">About Us</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@mrcoffee.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MR.COFFEE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Form Validation
+        const form = document.getElementById('orderForm');
+        const submitBtn = document.getElementById('submitBtn');
+
+        function validateForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const address = document.getElementById('address').value;
+
+            if (!name || !email || !phone || !address) {
+                return false;
+            }
+
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address');
+                return false;
+            }
+
+            // Phone validation
+            const phoneRegex = /^\d{10,}$/;
+            if (!phoneRegex.test(phone.replace(/\D/g, ''))) {
+                alert('Please enter a valid phone number');
+                return false;
+            }
+
+            return true;
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            if (!validateForm()) {
+                return false;
+            }
+
+            // Disable submit button
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Processing...';
+
+            // Simulate order processing
+            setTimeout(() => {
+                alert('Order placed successfully! Thank you for choosing MR.COFFEE.');
+                form.reset();
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Place Order';
+            }, 2000);
+
+            return false;
+        }
+
+        // Payment Method Selection
+        function selectPayment(element, method) {
+            // Remove active class from all payment methods
+            document.querySelectorAll('.payment-method').forEach(el => {
+                el.classList.remove('active');
+            });
+
+            // Add active class to selected payment method
+            element.classList.add('active');
+        }
+
+        // Mobile Navigation
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Form Input Animation
+        const inputs = document.querySelectorAll('.form-control');
+        inputs.forEach(input => {
+            input.addEventListener('focus', () => {
+                input.parentElement.classList.add('focused');
+            });
+
+            input.addEventListener('blur', () => {
+                if (!input.value) {
+                    input.parentElement.classList.remove('focused');
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

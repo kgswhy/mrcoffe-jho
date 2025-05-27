@@ -1,0 +1,79 @@
+/* Tablet and Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* Navigation */
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-links a {
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Hero Section */
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    /* Featured Products */
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    /* Founder Spotlight */
+    .founder-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .founder-content img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-section a {
+        margin: 0.5rem auto;
+    }
+}
+
+/* Mobile Specific Styles */
+@media screen and (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .founder-content img {
+        width: 150px;
+        height: 150px;
+    }
+} 
